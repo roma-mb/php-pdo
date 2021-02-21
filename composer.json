@@ -1,0 +1,30 @@
+{
+    "name": "roma-melo/php-pdo",
+    "type": "project",
+    "require": {
+        "composer/composer": "^2.0",
+        "ext-pdo": "*",
+        "squizlabs/php_codesniffer": "*"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pdo\\": "src/"
+        },
+        "files": [
+            "./src/helpers.php"
+        ]
+    },
+    "scripts": {
+        "cs-fix": "phpcbf --standard=PSR12 ./src"
+    },
+    "authors": [
+        {
+            "name": "roma-melo",
+            "email": "romario.melo.barreiras@gmail.com"
+        }
+    ]
+}
